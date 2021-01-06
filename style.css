@@ -1,0 +1,17 @@
+.container{
+    border-color: grey;
+    margin-bottom: 200px;
+}
+.card-footer {
+    height: 60px !important;
+}
+.is-error {
+    background-color: #F8D7DA;
+}
+.visible {
+    display: block;
+}
+
+.no-visible {
+    display: none;
+}

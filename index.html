@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="container mt-3 mb-3 " style="height: 20px">
+        <form id="formulario" class=" border border-light" >
+               <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid b">
+                        <span class="navbar-brand mb-0 h1">Payment form</span>
+                    </div>
+                </nav>
+            <div class="col-12">
+             
+                <div class="borde">
+                    <div id="alerta" class="alert alert-danger mt-3 no-visible" role="alert">
+                        Some fields are missing!
+                    </div>
+                    <!--aqui primera fila-- style="padding: 10px !important-->
+                    <div class="form-row mt-2">
+                        <div class="form-group col-md-4" >
+                            <label for="inputPassword4">Card #</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputcoin">CVC #</label>
+                            <input type="number" class="form-control" id="inputnumber" placeholder="00000">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputcoin">Amount</label>
+                            <i class="fas fa-dollar-sign"></i>
+                            <input type="number" class="form-control" id="inputnumber" placeholder="Amount">
+                        </div>
+                    </div>
+                    <!--aqui segunda fila-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">First name</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Last name</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                        </div>
+                    </div>
+                    <!--aqui tercera fila-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option value=''>Pick state</option>
+                                <option value='Algo'>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Postal code</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <!--aqui cuarta fila-->
+                    <div class="form-row">
+                        <div class="firm-group col-md-6">
+                            <p>
+                                We accept:
+                            </p>
+                            <div class="form-group badge bg-secondary">
+                                <div class="form-check-inline">
+                                    <input class="form-check" type="radio" id="gridCheck" name="tarjeta">
+                                    <label class="form-check-label" for="gridCheck">
+                                        <i class="fab fa-cc-mastercard"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input " type="radio" id="gridCheck" name="tarjeta">
+                                    <label class="form-check-label" for="gridCheck">
+                                        <i class="fab fa-cc-visa"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input " type="radio" id="gridCheck" name="tarjeta">
+                                    <label class="form-check-label" for="gridCheck">
+                                        <i class="fab fa-cc-diners-club"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input " type="radio" id="gridCheck" name="tarjeta">
+                                    <label class="form-check-label" for="gridCheck">
+                                        <i class="fab fa-cc-amex"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputtext">Message</label>
+                            <textarea class="form-control" id="inputtext" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <!--aqui comienza la quinta fila-->
+
+                </div>
+            </div>
+            <div class="card-footer bg-light  ">
+                <div class="float-right">
+                    <button type="reset" class="btn btn-secondary ">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
